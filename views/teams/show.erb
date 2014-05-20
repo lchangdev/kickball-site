@@ -6,7 +6,8 @@
   <link href="styles.css" media="screen" rel="stylesheet"/>
 </head>
 <body>
-  <h1><%= @player[:team] %></h1>
+
+  <h1 class="title"><%= @player[:team] %></h1>
 
   <ol>
       <% @players.each do |x| %>

@@ -1,3 +1,34 @@
 body {
-  font-size: 10px;
+  font-style: Verdana;
 }
+
+a {
+  color: black;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 80;
+}
+
+.team-container ol,
+.positions-container ol {
+  text-align: center;
+
+}
+
+.team-container li,
+.positions-container li {
+  list-style: none;
+  display: inline-block;
+  padding: 2%;
+}
+
+.team-container > ol > li > a,
+.positions-container > ol > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+

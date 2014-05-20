@@ -4,32 +4,40 @@
   <meta charset="utf-8">
   <title>Kickball Teams</title>
   <link href="styles.css" media="screen" rel="stylesheet"/>
+
 </head>
 <body>
-  <h1>Kickball Teams</h1>
+  <div class="title1-container">
+    <h1 class="title">Kickball Teams</h1>
+  </div>
 
-  <ol>
-    <% @teams.uniq.each do |team| %>
-    <li>
-      <a href="<%= url("/teams/#{team}") %>">
-        <%= team %>
-      </a>
-    </li>
-    <% end %>
-  </ol>
+  <div class="team-container">
+    <ol>
+      <% @teams.uniq.each do |team| %>
+      <li>
+        <a class="links" href="<%= url("/teams/#{team}") %>">
+          <%= team %>
+        </a>
+      </li>
+      <% end %>
+    </ol>
+  </div>
 
-  <h3>Positions</h3>
+  <div class="title2-container">
+    <h1 class="title">Positions</h1>
+  </div>
 
-  <ol>
-    <% @positions.uniq.each do |position| %>
-    <li>
-      <a href="<%= url("/positions/#{position}") %>">
-        <%= position %>
-      </a>
-    </li>
-    <% end %>
-  </ol>
-
+  <div class="positions-container">
+    <ol>
+      <% @positions.uniq.each do |position| %>
+      <li>
+        <a class="links" href="<%= url("/positions/#{position}") %>">
+          <%= position %>
+        </a>
+      </li>
+      <% end %>
+    </ol>
+  </div>
 
 
 </body>
